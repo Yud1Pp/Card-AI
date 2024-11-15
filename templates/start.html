@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardiovaskular Diagnosis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/start.css"> <!-- Menyertakan file CSS eksternal -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p> Kardiovaskular </p>
+                <ul>
+                    <li><a href="#">Pengecekan</a></li>
+                    <li><a href="#">Pengertian</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>        
+            </nav>  
+            
+            <div class="header-text">
+                <h1>Kardio<span>vaskular</span> <br>Diagnosis</h1>
+                <p>Website untuk melakukan pengecekan penyakit Kardiovaskular <br>berdasarkan gejala yang dialami.</p>
+                <button>Lakukan Pengecekan</button>
+            </div>     
+        </div>    
+    </div>
+    <!-- ----------------Pengertian------------------ -->   
+    <div id="kardio-info">
+        <div class="container">
+            <h2>Apa itu <span>Kardiovaskular</span>?</h2>
+            <div class="row">
+                <div class="kardio-img">
+                    <img src="{{ url_for('static', filename='kardiovaskular.jpg') }}" alt="Gambar Kardiovaskular">
+                </div>
+                <div class="kardio-text">
+                    <p>Penyakit kardiovaskular adalah kelompok gangguan pada jantung dan pembuluh darah yang meliputi penyakit jantung koroner, penyakit arteri perifer, dan kondisi lain yang terkait. Penyakit ini dapat menyebabkan komplikasi serius seperti serangan jantung dan stroke. Penting untuk menjaga kesehatan jantung melalui pola makan sehat, olahraga, dan pemeriksaan rutin.</p>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Jenis-jenis------------------- -->           
+    <div id="jenis-kardio">
+        <div class="container">
+            <h2>Jenis-Jenis Penyakit <span>Kardiovaskular</span></h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='aritmia.jpg') }}" alt="Aritmia">
+                    <div class="card-content">
+                      <h2>Aritmia</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='gagaljantung.jpg') }}" alt="Gagal Jantung">
+                    <div class="card-content">
+                      <h2>Gagal Jantung</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='jantungkoroner.jpg') }}" alt="Jantung Koroner">
+                    <div class="card-content">
+                      <h2>Jantung Koroner</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='jantungbawaan.png') }}" alt="Jantung Bawaan">
+                    <div class="card-content">
+                      <h2>Jantung Bawaan</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='katup.jpg') }}" alt="Katup Jantung">
+                    <div class="card-content">
+                      <h2>Penyakit Katup</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='pem.jpg') }}" alt="Pembuluh darah">
+                    <div class="card-content">
+                      <h2>Penyumbatan Pembuluh<br> Darah</br></h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

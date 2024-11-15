@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tes.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>KARD AI</h1>
+        </header>
+
+        <div id="response" class="chat-box">
+            <p><strong>Hello!</strong> I'm an AI assistant. Ask me anything.</p>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your question here">
+            <button onclick="sendMessage()" class="send-button">
+                <img src="direct.png" alt="Send" class="send-icon">
+            </button>    
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById("user-input").value;
+            const responseDiv = document.getElementById("response");
+
+            if (input) {
+                // Mengirim permintaan ke API
+                const response = await fetch("http://127.0.0.1:5000/chatbot", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ input: input })
+                });
+
+                const data = await response.json();
+                responseDiv.innerHTML += `<p><strong>Response:</strong> ${data.response}</p>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

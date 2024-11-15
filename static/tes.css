@@ -1,0 +1,92 @@
+body {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.chat-header {
+    background-color: #f7f7f7;
+    padding: 5px 0px 5px 20px;
+    text-align: left;
+    font-family: Bungee, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: #4D394B;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px 20px; 
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+}
+
+.chat-box p {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.chat-input-container {
+    display: flex;
+    position: relative; 
+    padding: 15px 20px; 
+}
+
+.chat-input-container input {
+    flex-grow: 1;
+    padding: 5px 50px 5px 20px; 
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
+    outline: none;
+    height: 50px; 
+}
+
+.chat-input-container .send-button {
+    position: absolute;
+    right: 30px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #9b9b9b;
+    padding: 10px; 
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    width: 40px; /* Sesuaikan ukuran tombol */
+    height: 40px;
+}
+
+.chat-input-container .send-button:hover {
+    background-color: #cecece;
+}
+
+.send-icon {
+    width: 20px; /* Sesuaikan ukuran ikon agar lebih besar */
+    height: 20px;
+}
